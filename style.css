@@ -27,26 +27,36 @@ header{
   background:rgb(244, 238, 238);
   }
 #inicio{
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 22rem;
-    grid-template-columns: 1fr min-content(15rem, 1fr);
+   display: flex;
+   padding: 10px;
+   flex-wrap: wrap;
+}
+#inicio div{
+  width: 100;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 25px;
+}
+
+.foto{
+  display: flex;
+justify-content: center;
 }
   #proyectos{
     text-align:center;
     padding: 10rem 2rem; 
     margin-bottom: 5px;
   }
-  .proyectos-titulo, .titulo-skills{
+  .proyectos-titulo {
     max-width:640px;
     margin:auto;
     margin-bottom:6rem;
-  }
+ }
   .proyectos-grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap:4rem;
-    width:100%;
+    gap:4rem;
     max-width:1280px;
     margin:0 auto;
     margin-bottom:6rem;
@@ -57,23 +67,7 @@ header{
     object-fit: cover; 
   }
  
- .skills{
- justify-content: center;
- background-color: #f7d6e0;
- }
-  .habilidades{
-    width: 10%;
-    justify-content:space-evenly;
-    padding:2rem;
-    border-radius: 10%;
-  }
-  
-
-
-
-
-
-
+ 
   footer{
     display:flex;
     justify-content:space-evenly;
@@ -85,5 +79,4 @@ header{
   #icono{
     font-size: 45px;
     margin-left: 20px;
- 
-   }
+  }
